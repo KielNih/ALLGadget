@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="script-register.js" defer></script>
+    <title>ALL Gadget</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <img class="Logo" src="img/Logo.png" alt="Logo">
+            <ul class="Listmenu">
+                <li class="Listmenu-item"><a href="Home.html" class="Listmenu-link">HOME</a></li>
+                <li class="Listmenu-item"><a href="Find-Us.html" class="Listmenu-link">FIND US</a></li>
+                <li class="Listmenu-item"><a href="Gallery1.html" class="Listmenu-link">GALLERY</a></li>
+                <li class="Listmenu-item"><a href="About-Us.html" class="Listmenu-link">ABOUT US</a></li>
+                <a href="Register.html" class="btn-register">REGISTER</a>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Sign Up</h1>
+    <form class="formnih" action="">
+        <div class="gap">
+            <label class="gap1" for="username">Username</label><br>
+            <input class="input" type="text" name="username" id="username">
+            <br><br>
+
+            <label class="gap1" for="email">Email</label><br>
+            <input class="input" type="email" name="email" id="email">
+            <br> <br>
+
+            <label class="gap1" for="password">Password</label><br>
+            <input class="input" type="text" name="password" id="password">
+            <br> <br>
+
+            <label class="gap1" for="phonenumber">Phone Number</label><br>
+            <input class="input" type="number" name="phonenumber" id="phonenumber">
+            <br> <br>
+
+            <label class="birth" for="birth">Date of Birth</label><br>    
+            <input class="input-birth" type="date" name="birth" id="birth">
+            <br> <br>
+
+            <label class="gender" for="gender">Gender</label>
+            <input class="gender1" type="radio" name="gender" id="male">Male
+            <input class="gender1" type="radio" name="gender" id="female">Female
+            <br> <br>
+
+            <label class="province" for="province">Province</label>
+            <select name="province" id="province">
+                <option value="empty">Choose One</option>
+                <option value="Indonesian">Jakarta Barat</option>
+                <option value="Korean">Jakarta Timur</option>
+                <option value="American">Jakarta Selatan</option>
+                <option value="Indonesian">Jakarta Utara</option>
+                <option value="Korean">Tangerang</option>
+                <option value="American">DKI Jakarta</option>
+            </select>
+            <br>
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <label class="agree" for="checkbox">I Agree to the terms and condition</label>
+            <br>
+            <button class="but1" type="submit" onclick="validateregister(event)">Create Account</button>
+            <button type="reset">Reset</button>
+            <br> <br>
+        </div>
+    </form>
+    <footer>
+        <div class="simpleaboutus">
+            <img src="img/Logo.png" alt="">
+            <p>ALL Gadget is a website that provides various gadget needs. We sell various official products that are officially distributed. 
+                We have also collaborated with several famous gadget brands.
+            </p>
+        </div>
+        <div class="sosialmedia">
+            <h2>follow us</h2>
+            <div class="sosmed">
+                <a href="#"><i class="fb"></i><img src="img/fb.png" alt=""></a>
+                <a href="#"><i class="twitter"></i><img src="img/tw.png" alt=""></a>
+                <a href="#"><i class="instagram"></i><img src="img/ig.png" alt=""></a>
+                <a href="#"><i class="wa"></i><img src="img/wa.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:x{
+    --main-color : #000000;
+    --sec-color : #0267FF;
+    --3rd-color : #00084F;
+    --4th-color : #00063F;
+    --5th-color : #00084F;
+    --6th-color : #05FF00;
+    --7th-color : #0B0090;
+    --8th-color : #0D0F0D;
+    --9th-color : #596AFF;
+    --10th-color : #91BC35;
+    --11th-color : #ABABAB;
+    --12th-color : #CAAA00;
+    --13th-color : #E9E6E6;
+    --14th-color : #F2F2FF;
+    --15th-color : #FFFF00;
+
+    --main-font: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #ffecac;
+    font-family: var(--main-font);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav{
+    background: #F2F2FF;
+    height: 100px;
+    width: 100%;
+  }
+  .navbar .Logo{
+    height: 100px;
+    width: 250px;
+    margin-left: 50px;
+}
+  nav ul{
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    text-decoration: underline;
+    filter: drop-shadow(0px 6px 4px);
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+nav .btn-register:hover{
+    text-decoration: underline;
+}
+
+nav .btn-register{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 20px 30px;
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    color: #000000;
+    transition: ease-in 0.5s;
+}
+
+nav .btn-register:hover {
+    box-shadow: inset 0 -100px 0 0 #1dac009c;
+}
+  
+nav .btn-register:active {
+    transform: scale(0.9);
+}
+.navbar .checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+#check{
+    display: none;
+}
+.Listmenu-item-now{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #dcf081;
+}
+.sosialmedia{
+    margin-left: 100px;
+}
+footer h2{
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	position: relative;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+footer .simpleaboutus img{
+    width: 100px;
+}
+footer .simpleaboutus{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+.sosialmedia a{
+    display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #ffecac;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #000000;
+	transition: all 0.5s ease;
+}
+/* page gallery */
+.menu-gallery .Listmenu-gallery{
+    margin-top: 20px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding : 2px;
+    color: #000000;
+    font-size: 24px;
+}
+.menu-gallery .Listmenu-gallery .gallery-link{
+    color: #000000;
+}
+.menu-gallery .Listmenu-gallery .gallery-item:hover{
+    text-decoration: underline;
+}
+.Listitems .items{
+    float: left;
+    position: relative;
+    background-color: #e2f491;
+    display: flex;
+    padding:    10px;
+    width: 320px;
+    height: 330px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 6px 2px);
+    transition: all 0.8s ease;
+}
+.Listitems .items:hover{
+    transform: scale(1.1);
+}
+.Listitems .items img{
+    width: 150px;
+    height: 250px;
+    float: left;
+}
+.Listitems .items h1{
+    margin-top: 100px;
+    font-size: 28px;
+    text-align: left;
+}
+.Listitems .items p{
+    margin-top: 250px;
+    margin-left: 50px;
+    position: fixed;
+    font-size: 32px;
+    filter: drop-shadow(0px 1px 1px);
+
+}
+.pages .Listpages{
+    position: relative;
+    margin-top: 775px;
+    margin-left: 600px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding : 20px 10px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.pages .Listpages .pages-link{
+    color: #000000;
+}
+
+.menu-gallery .Listmenu-gallery .gallery-item-now{
+    font-weight: bolder;
+}
+
+@media (max-width: 768px){
+    .navbar .Logo{
+        height: 100px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        position: relative;
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 768px)
+  {
+    .navbar .checkbtn{
+        display: block;
+    }
+    .navbar ul{
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #F2F2FF;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .Listitems .items{
+        width: 170px;
+        height: 280px;
+        margin-left: 18px;
+    }
+    .Listitems .items h1{
+        font-size: 28px;
+        position: fixed;
+        margin-left: 18px;
+        margin-top: 150px;
+    }
+    .Listitems .items p{
+        margin-top: 220px;
+        margin-left: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .Listitems .items img{
+        width: 100px;
+        height: 150px;
+        margin-left: 22px;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    footer .simpleaboutus{
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .pages .Listpages{
+        position: relative;
+        margin-top: 1100px;
+        margin-left: 0px;
+    }
+    .menu-gallery .Listmenu-gallery{
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 20px;
+        gap: 0px;
+        display:contents;
+    }
+    .menu-gallery ul li{
+        margin-top: 15px;
+        display: grid;
+        place-items: center;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        text-decoration: underline;
+    }
+    #check:checked ~ ul{
+        left: 0;  
+    }
+  }
